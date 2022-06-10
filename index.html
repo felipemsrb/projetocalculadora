@@ -8,30 +8,31 @@
 </head>
 <body>
     <h1>Calculadora</h1>
-  <form>
-      <input type="text" class="text maincolor" name="text1" disabled>
-      <input type="text" class="text maincolor" name="text2" value="C" onclick="location.reload()"><br>
+  <form action="" name="calculadora">
+      <input type="text" class="text maincolor" name="text1"  disabled>
+      <input type="button" class="text maincolor" name="text2" value="C" onclick="location.reload()"><br>
 
-      <input type="button" class="num maincolor" name="btn9" value="9" onclick="btn9.value">
-      <input type="button" class="num maincolor" name="btn8" value="8" onclick="btn9.value">
-      <input type="button" class="num maincolor" name="btn7" value="7" onclick="btn9.value">
-      <input type="button" class="num maincolor" name="addbtn" value="+" onclick="addbtn.value"><br>
+      <input type="button" class="num maincolor" name="btn9" value="9" onclick="mostraTecla(btn9.value)">
+      <input type="button" class="num maincolor" name="btn8" value="8" onclick="mostraTecla(btn9.value)">
+      <input type="button" class="num maincolor" name="btn7" value="7" onclick="mostraTecla(btn9.value)">
+      <input type="button" class="botaomais" name="addbtn" value="+" onclick="mostraTecla(addbtn.value)"><br>
 
-      <input type="button" class="num maincolor" name="btn6" value="6" onclick="btn6.value">
-      <input type="button" class="num maincolor" name="btn5" value="5" onclick="btn5.value">
-      <input type="button" class="num maincolor" name="btn4" value="4" onclick="btn4.value">
-      <input type="button" class="num maincolor" name="subbtn" value="-" onclick="subbtn.value"><br>
+      <input type="button" class="num maincolor" name="btn6" value="6" onclick="mostraTecla(btn6.value)">
+      <input type="button" class="num maincolor" name="btn5" value="5" onclick="mostraTecla(btn5.value)">
+      <input type="button" class="num maincolor" name="btn4" value="4" onclick="mostraTecla(btn4.value)">
+      <input type="button" class="botaomenos" name="subbtn" value="-" onclick="mostraTecla(subbtn.value)"><br>
 
-      <input type="button" class="num maincolor" name="btn3" value="3" onclick="btn3.value">
-      <input type="button" class="num maincolor" name="btn2" value="2" onclick="btn2.value">
-      <input type="button" class="num maincolor" name="btn1" value="1" onclick="btn1.value">
-      <input type="button" class="num maincolor" name="mutibtn" value="*" onclick="mutibtn.value"><br>
+      <input type="button" class="num maincolor" name="btn3" value="3" onclick="mostraTecla(btn3.value)">
+      <input type="button" class="num maincolor" name="btn2" value="2" onclick="mostraTecla(btn2.value)">
+      <input type="button" class="num maincolor" name="btn1" value="1" onclick="mostraTecla(btn1.value)">
+      <input type="button" class="botaovezes" name="mutibtn" value="*" onclick="mostraTecla(mutibtn.value)"><br>
 
-      <input type="button" class="num maincolor" name="btnponto" value="." onclick="btnponto.value">
-      <input type="button" class="num maincolor" name="btn0" value="0" onclick="btn0.value">
-      <input type="button" class="num maincolor" name="btnigual" value="=" onclick="btnigual.value">
-      <input type="button" class="num maincolor" name="divdbtn" value="/" onclick="divdbtn.value"><br>
+      <input type="button" class="botaoponto" name="btnponto" value="." onclick="mostraTecla(btnponto.value)">
+      <input type="button" class="num maincolor" name="btn0" value="0" onclick="mostraTecla(btn0.value)">
+      <input type="button" class="botaigual" name="btnigual" value="=" onclick="text1.value=eval(text1.value)">
+      <input type="button" class="botaodivide" name="divdbtn" value="/" onclick="mostraTecla(divdbtn.value)"><br>
 
   </form>
 </body>
-</html>>
+<script src="script.js"></script>
+</html>
