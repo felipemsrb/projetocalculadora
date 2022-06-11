@@ -1,0 +1,87 @@
+body {
+    background:linear-gradient(to bottom right, cyan, yellow);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+   
+}
+
+.caixa {
+    border: white solid;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: black
+
+}
+
+.display {
+    width: 160px;
+    height: 17px;
+    border-radius: 22px;
+    letter-spacing: 5px;
+}
+
+.botaoc {
+border-radius: 50%;
+background-color: orangered;
+
+
+cursor: pointer;
+
+
+}
+
+input{
+color: whitesmoke;
+padding: 17px;
+outline: none;
+font-size: 30px;
+border-radius: 15px;
+
+}
+
+.numeros {
+    background: blueviolet;
+    width: 64px;
+    height: 67px;
+}
+
+.botaomais {
+    background-color: green;
+    width: 64px;
+    height: 67px;
+}
+
+.botaomenos{
+    background-color: purple;
+    width: 64px;
+    height: 67px;
+}
+
+.botaovezes {
+    background-color: teal;
+    width: 64px;
+    height: 67px;
+}
+
+.botaoponto {
+    background-color: goldenrod;
+    width: 64px;
+    height: 67px;
+}
+
+.botaoigual {
+    background-color: tomato;
+    width: 64px;
+    height: 67px;
+}
+
+.botaodivide {
+    background-color: indigo;
+    width: 64px;
+    height: 67px;
+}

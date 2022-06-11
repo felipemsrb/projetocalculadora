@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
 </head>
 <body>
-    <h1>Calculadora</h1>
+    <div class="caixa">
   <form action="" name="calculadora">
-      <input type="text" class="text maincolor" name="text1"  disabled>
-      <input type="button" class="text maincolor" name="text2" value="C" onclick="location.reload()"><br>
+    
+      <input type="text" class="display" name="text1"  disabled>
+      <input type="button" class="botaoc" name="text2" value="C" onclick="location.reload()"><br>
 
-      <input type="button" class="num maincolor" name="btn9" value="9" onclick="mostraTecla(btn9.value)">
-      <input type="button" class="num maincolor" name="btn8" value="8" onclick="mostraTecla(btn8.value)">
-      <input type="button" class="num maincolor" name="btn7" value="7" onclick="mostraTecla(btn7.value)">
+      <input type="button" class="numeros" name="btn9" value="9" onclick="mostraTecla(btn9.value)">
+      <input type="button" class="numeros" name="btn8" value="8" onclick="mostraTecla(btn8.value)">
+      <input type="button" class="numeros" name="btn7" value="7" onclick="mostraTecla(btn7.value)">
       <input type="button" class="botaomais" name="addbtn" value="+" onclick="mostraTecla(addbtn.value)"><br>
 
-      <input type="button" class="num maincolor" name="btn6" value="6" onclick="mostraTecla(btn6.value)">
-      <input type="button" class="num maincolor" name="btn5" value="5" onclick="mostraTecla(btn5.value)">
-      <input type="button" class="num maincolor" name="btn4" value="4" onclick="mostraTecla(btn4.value)">
+      <input type="button" class="numeros" name="btn6" value="6" onclick="mostraTecla(btn6.value)">
+      <input type="button" class="numeros" name="btn5" value="5" onclick="mostraTecla(btn5.value)">
+      <input type="button" class="numeros" name="btn4" value="4" onclick="mostraTecla(btn4.value)">
       <input type="button" class="botaomenos" name="subbtn" value="-" onclick="mostraTecla(subbtn.value)"><br>
 
-      <input type="button" class="num maincolor" name="btn3" value="3" onclick="mostraTecla(btn3.value)">
-      <input type="button" class="num maincolor" name="btn2" value="2" onclick="mostraTecla(btn2.value)">
-      <input type="button" class="num maincolor" name="btn1" value="1" onclick="mostraTecla(btn1.value)">
+      <input type="button" class="numeros" name="btn3" value="3" onclick="mostraTecla(btn3.value)">
+      <input type="button" class="numeros" name="btn2" value="2" onclick="mostraTecla(btn2.value)">
+      <input type="button" class="numeros" name="btn1" value="1" onclick="mostraTecla(btn1.value)">
       <input type="button" class="botaovezes" name="mutibtn" value="*" onclick="mostraTecla(mutibtn.value)"><br>
 
       <input type="button" class="botaoponto" name="btnponto" value="." onclick="mostraTecla(btnponto.value)">
-      <input type="button" class="num maincolor" name="btn0" value="0" onclick="mostraTecla(btn0.value)">
-      <input type="button" class="botaigual" name="btnigual" value="=" onclick="text1.value=eval(text1.value)">
+      <input type="button" class="numeros" name="btn0" value="0" onclick="mostraTecla(btn0.value)">
+      <input type="button" class="botaoigual" name="btnigual" value="=" onclick="text1.value=eval(text1.value)">
       <input type="button" class="botaodivide" name="divdbtn" value="/" onclick="mostraTecla(divdbtn.value)"><br>
-
+    </div>
   </form>
 </body>
 <script src="script.js"></script>
